@@ -15,8 +15,17 @@ require_once('main.php');
 </head>
 
 <style>
-    #stateData>ul>li {
+    #stateData>ul {
         list-style: none;
+        margin: 0px;
+        padding: 0 0 10px 0;
+    }
+    .data:hover{
+        color:blue;
+        cursor: pointer;
+        background-color: aqua;
+        text-transform: uppercase;
+        padding: 5px !important;
     }
 </style>
 
@@ -24,7 +33,7 @@ require_once('main.php');
     <div class="container mt-5">
         <div class="card">
             <div class="card-header">
-                <h4 class="text-center text-primary">Select State District City</h4>
+                <h4 class="text-center text-primary">Live Search Using Ajax</h4>
             </div>
             <div class="card-body">
                 <form action="javascript:void(0)" id="formVal">
